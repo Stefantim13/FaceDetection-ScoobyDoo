@@ -3,7 +3,6 @@ import numpy as np
 from Parameters import Parameters
 from ScoobyDooTrainingExtractor import extract_scooby_training_data
 
-
 def main():
     print("=" * 60)
     print("EXTRAGERE DATE DE ANTRENARE DIN SCENE COMPLETE")
@@ -13,11 +12,11 @@ def main():
     # Inițializare parametri
     # =======================
     params = Parameters()
-    params.dim_window = 36
-    params.dim_hog_cell = 6
+    params.dim_window = 64
+    params.dim_hog_cell = 4
     params.overlap = 0.3
     params.number_negative_examples = 0   # va fi actualizat după extragere
-    params.use_flip_images = True
+    params.use_flip_images = False
 
     # Afișare configurație
     print("\nConfiguratie:")
